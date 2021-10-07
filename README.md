@@ -14,7 +14,7 @@
 - ### For creating a collection and then inserting one document
       db.collection_name.insertOne({ attribute1 : , attribute2 :   , ... , attributeN: })
 - ### For creating a collection and then inserting many document
-      db.collection_name.insertMany({ attribute1 : , attribute2 :   , ... , attributeN:},{ attribute1 : , attribute2 :   , ... , attributeN:})
+      db.collection_name.insertMany([{ attribute1 : , attribute2 :   , ... , attributeN:},{ attribute1 : , attribute2 :   , ... , attributeM:}])
 - ### For Finding All the documents in a collection
       db.collection_name.find()
 - ### For Finding All the documents in a collection
