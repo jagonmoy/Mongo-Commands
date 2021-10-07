@@ -1,3 +1,12 @@
+
+ - ### If you are using Manjaro Linux and trying to enable mongo community server in your system , then type the following commands sequentially
+       pamac install mongodb-bin
+       sudo systemctl enable --now mongodb
+       sudo systemctl status mongodb
+    
+    <br>
+
+    ## Mongo Commands ( Same For All Operating System) <br><br>
 - ### For Opening Mongo Shell from terminal
       mongo
 - ### For creating a database or switching to a existing database
