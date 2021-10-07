@@ -17,8 +17,8 @@
       db.collection_name.insertMany([{ attribute1 : , attribute2 :   , ... , attributeN:},{ attribute1 : , attribute2 :   , ... , attributeM:}])
 - ### For Finding All the documents in a collection
       db.collection_name.find()
-- ### For Finding All the documents in a collection
-      db.collection_name.find()
+- ### For Finding a single documents in a collection
+      db.collection_name.find(object_ID)
 - ### For showing all the databases
       show dbs
 - ### For showing all the Collections of current database
