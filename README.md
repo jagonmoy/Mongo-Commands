@@ -22,12 +22,16 @@
       quit()
 
 ## CREATE OPERATION
+<br>
+
 - ### For creating a collection and then inserting one document
       db.collection_name.insertOne({ attribute1 : , attribute2 :   , ... , attributeN: })
 - ### For creating a collection and then inserting many document
       db.collection_name.insertMany([{ attribute1 : , attribute2 :   , ... , attributeN:},{ attribute1 : , attribute2 :   , ... , attributeM:}])
 
 ## READ OPEATION 
+<br>
+
 - ### For Finding All the documents in a collection
       db.collection_name.find()
 - ### For Finding a single documents in a collection
@@ -42,3 +46,53 @@
       db.collection_name.find({ $or : [{ attribute1 : {$query_operator1 : value1}},{attribute2 : {$query_operator2 : value2}} ] } , { attribute3 : value3})
 
 ### visit [Mongo DB Query Operators](https://docs.mongodb.com/manual/reference/operator/query/) for learning about query and Projection operators
+ <br><br>
+## UPDATE OPERATION
+   <br>
+
+- ### For updating one single document
+      db.collection_name.updateOne( { filtering_part },{ information_to_be_updated } )
+
+      means,
+
+      db.collection_name.updateOne( { query } , { $set : {query}})
+
+      means,
+
+      db.collection_name.updateOne( { attribute1 : value1} , { $set : {attribute2 : value2 } } )
+- ### For updating Many document
+      db.collection_name.updateMany( { filtering_part },{ information_to_be_updated } )
+      
+      means,
+
+      db.collection_name.updateMany( { query } , { $set : {query}})
+
+      means,
+
+      db.collection_name.updateMany( { attribute1 : value1} , { $set : {attribute2 : value2 } } )      
+## DELETE OPERATION
+   <br>
+
+- ### For Deleting one single document
+      db.collection_name.deleteOne( { filtering_part })
+
+      means,
+
+      db.collection_name.deleteOne( { query })
+
+      means,
+
+      db.collection_name.deleteOne( { attribute1 : value1})
+- ### For Deleting Many document
+      db.collection_name.deleteMany( { filtering_part })
+      
+      means,
+
+      db.collection_name.deleteMany( { query })
+
+      means,
+
+      db.collection_name.deleteMany( { attribute1 : value1})   
+
+- ### For deleting all documents
+      db.collection_name.deleteMany({})   
